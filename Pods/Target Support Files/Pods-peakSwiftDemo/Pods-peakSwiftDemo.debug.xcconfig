@@ -1,0 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/PeakSDK/PeakSDK.embeddedframework"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PeakSDK"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/PeakSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"sqlite3" -l"xml2" -l"z" -framework "AVFoundation" -framework "AdSupport" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreTelephony" -framework "EventKit" -framework "EventKitUI" -framework "MediaPlayer" -framework "MessageUI" -framework "MobileCoreServices" -framework "PKAdColony" -framework "PKAppLovin" -framework "PKAvoCarrot" -framework "PKFlurry" -framework "PKInMobi" -framework "PKLeadbolt" -framework "PKMoPub" -framework "PKMobFox" -framework "PKMyTarget" -framework "PKNativeX" -framework "PKUnityAds" -framework "PKVungle" -framework "PKYandex" -framework "PeakSDK" -framework "QuartzCore" -framework "SafariServices" -framework "Security" -framework "Social" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
